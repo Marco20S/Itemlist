@@ -15,17 +15,7 @@ const initialState = {
 
 
 
-function addItemReducer(state = initialState, action) {
-    switch (action.type) {
-        case "ADD_ITEM":
-            return {
-                ...state,
-                items: [...state.items, action.payload]
-            };
-        default:
-            return state;
-    }
-}
+
 
 const fetch_user_Request = "Fetching User Data"
 const fetch_User_Items = "Items Are Added "

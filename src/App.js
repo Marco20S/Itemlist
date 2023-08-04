@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { Provider } from 'react-redux';
+import store from './component/redux/items/store';
 
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 
@@ -19,6 +21,7 @@ function App() {
 
   return (
     <>
+    <Provider store={store}>
     <Router>
       <Navbar />
       <Routes>
@@ -27,6 +30,7 @@ function App() {
       </Routes>
 
     </Router>
+    </Provider>
       
       {/* <Card /> */}
       {/* <Home/> */}
