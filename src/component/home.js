@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Card from './card'
-import AddItem from './addItem';
+import Card from './redux/pages/card'
+import AddItem from './redux/pages/addItem';
 
 
 export default function Home() {
